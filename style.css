@@ -733,7 +733,7 @@ body {
     border-radius: 4px;
 }
 
-/* Notification Hover Active */
+/* Notification Hover Active  -> see this*/
 #notifications:hover #notification {
     display: block !important;
 }
