@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <!-- jQuery CDN -->
+    <script src='https://code.jquery.com/jquery-3.6.1.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel='stylesheet' href='style.css'>
+    <link rel="stylesheet" href="components.css">
+    <!-- Custom JS -->
+    <script src='app.js'></script>
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <script src="https://kit-pro.fontawesome.com/releases/v5.10.1/js/pro.min.js" data-auto-fetch-svg></script>
+</head>
+
+<body>
+    <!-- Left Box -->
+    <div class="left-box">
+        <div class="left-box-open">
+            <div class="logo">
+                <a href="/index.html"><img src="/images/logo.svg" alt="Logo" class="pointer"></a>
+                <span class="svg-icons"><i id="caret-right" class="bi bi-caret-right-fill pointer"></i></span>
+                <span class="svg-icons"><i class="bi bi-caret-left-fill pointer"></i></span>
+            </div>
+            <div class="side-menu">
+                <div class="accordion">
+                    <input type="checkbox" value="1" name="select" class="accordion-select accordion-select-once" />
+                    <div class="accordion-title">
+                        <span><i class="bi bi-grid-fill"></i>&nbsp;&nbsp;Dashboards</span>
+                        <span class="accordion-drop"><i class="bi bi-arrow-down-short"></i></span>
+                    </div>
+                    <div class="accordion-content content-1">
+                        <ul>
+                            <li>Default</li>
+                            <li>Projects</li>
+                            <li>E-Commerce </li>
+                            <li>Marketing</li>
+                            <div>Show 4 More <i class="bi bi-plus-square-fill"></i></div>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="side-heading">
+                    <div class="pages">PAGES</div>
+                </div>
+                <div class="accordion">
+                    <input type="checkbox" value="1" name="select" class="accordion-select accordion-select-once" />
+                    <div class="accordion-title">
+                        <span><i class="bi bi-person-lines-fill"></i>&nbsp;&nbsp;User Profile</span>
+                        <span class="accordion-drop"><i class="bi bi-arrow-down-short"></i></span>
+                    </div>
+                    <div class="accordion-content content-2">
+                        <ul>
+                            <li>Overview</li>
+                            <li>Projects</li>
+                            <li>Campaigns</li>
+                            <li>Document</li>
+                            <li>Followers</li>
+                            <li>Activity</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <input type="checkbox" value="1" name="select" class="accordion-select accordion-select-once" />
+                    <div class="accordion-title">
+                        <span><i class="bi bi-back"></i>&nbsp;&nbsp;Account</span>
+                        <span class="accordion-drop"><i class="bi bi-arrow-down-short"></i></span>
+                    </div>
+                    <div class="accordion-content content-3">
+                        <ul>
+                            <li>Overview</li>
+                            <li>Setting</li>
+                            <li>Security</li>
+                            <li>Activity</li>
+                            <li>Billing</li>
+                            <li>Statements</li>
+                            <li>Referrals</li>
+                            <li>API Keys</li>
+                            <li>Logs</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <input type="checkbox" value="1" name="select" class="accordion-select accordion-select-once" />
+                    <div class="accordion-title">
+                        <span><i class="bi bi-shield-fill-exclamation"></i>&nbsp;&nbsp;Authentication</span>
+                        <span class="accordion-drop"><i class="bi bi-arrow-down-short"></i></span>
+                    </div>
+                    <div class="accordion-content content-4">
+                        <ul>
+                            <li>Corporate</li>
+                            <li>Email Templates</li>
+                            <li>Welcome Message</li>
+                            <li>Verify Email</li>
+                            <li>Comming Soon</li>
+                            <li>Password Confirmation</li>
+                            <li>Account Aeactivation</li>
+                            <li>Error 404</li>
+                            <li>Error 500</li>
+                            <li>Maintenance</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <input type="checkbox" value="1" name="select" class="accordion-select accordion-select-once" />
+                    <div class="accordion-title">
+                        <span><i class="bi bi-file-person-fill"></i>&nbsp;&nbsp;Corporate</span>
+                        <span class="accordion-drop"><i class="bi bi-arrow-down-short"></i></span>
+                    </div>
+                    <div class="accordion-content content-5">
+                        <ul>
+                            <li>About</li>
+                            <li>Our Team</li>
+                            <li>FAQ</li>
+                            <li>Contract Us</li>
+                            <li>Pricing</li>
+                            <li>Licenses</li>
+                            <li>Sitemap</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <input type="checkbox" value="1" name="select" class="accordion-select accordion-select-once" />
+                    <div class="accordion-title">
+                        <span><i class="bi bi-slack"></i>&nbsp;&nbsp;Social</span>
+                        <span class="accordion-drop"><i class="bi bi-arrow-down-short"></i></span>
+                    </div>
+                    <div class="accordion-content content-6">
+                        <ul>
+                            <li>Feed</li>
+                            <li>Activity</li>
+                            <li>Followers</li>
+                            <li>Setting</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <input type="checkbox" value="1" name="select" class="accordion-select accordion-select-once" />
+                    <div class="accordion-title">
+                        <span><i class="bi bi-bank2"></i>&nbsp;&nbsp;Blog</span>
+                        <span class="accordion-drop"><i class="bi bi-arrow-down-short"></i></span>
+                    </div>
+                    <div class="accordion-content content-7">
+                        <ul>
+                            <li>Blog Home</li>
+                            <li>Blog Post</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <input type="checkbox" value="1" name="select" class="accordion-select accordion-select-once" />
+                    <div class="accordion-title">
+                        <span><i class="bi bi-easel2-fill"></i>&nbsp;&nbsp;Careers</span>
+                        <span class="accordion-drop"><i class="bi bi-arrow-down-short"></i></span>
+                    </div>
+                    <div class="accordion-content content-7">
+                        <ul>
+                            <li>Careers List</li>
+                            <li>Careers Apply</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <input type="checkbox" value="1" name="select" class="accordion-select accordion-select-once" />
+                    <div class="accordion-title">
+                        <span><i class="bi bi-file-earmark-bar-graph-fill"></i>&nbsp;&nbsp;Utilities</span>
+                        <span class="accordion-drop"><i class="bi bi-arrow-down-short"></i></span>
+                    </div>
+                    <div class="accordion-content content-8">
+                        <ul>
+                            <li>Modals</li>
+                            <li>Search</li>
+                            <li>Wizards</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="side-heading">
+                    <div class="pages">APPS</div>
+                </div>
+                <div class="accordion">
+                    <input type="checkbox" value="1" name="select" class="accordion-select accordion-select-once" />
+                    <div class="accordion-title">
+                        <span><i class="bi bi-palette2"></i>&nbsp;&nbsp;Projects</span>
+                        <span class="accordion-drop"><i class="bi bi-arrow-down-short"></i></span>
+                    </div>
+                    <div class="accordion-content content-9">
+                        <ul>
+                            <li>My Projects</li>
+                            <li>View Projects</li>
+                            <li>Targets</li>
+                            <li>Budget</li>
+                            <li>Users</li>
+                            <li>Files</li>
+                            <li>Activity</li>
+                            <li>Setting</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <input type="checkbox" value="1" name="select" class="accordion-select accordion-select-once" />
+                    <div class="accordion-title">
+                        <span><i class="bi bi-basket2"></i>&nbsp;&nbsp;eCommerce</span>
+                        <span class="accordion-drop"><i class="bi bi-arrow-down-short"></i></span>
+                    </div>
+                    <div class="accordion-content content-10">
+                        <ul>
+                            <li>Catalog <span class="accordion-contain-drop"><i class="bi bi-arrow-down-short"></i></span></li>
+                            <li>Sales <span class="accordion-contain-drop"><i class="bi bi-arrow-down-short"></i></span>
+                            </li>
+                            <li>Customers <span class="accordion-contain-drop"><i class="bi bi-arrow-down-short"></i></span></li>
+                            <li>Reports <span class="accordion-contain-drop"><i class="bi bi-arrow-down-short"></i></span></li>
+                            <li>Settings</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <input type="checkbox" value="1" name="select" class="accordion-select accordion-select-once" />
+                    <div class="accordion-title">
+                        <span><i class="bi bi-nut-fill"></i>&nbsp;&nbsp;Contacts</span>
+                        <span class="accordion-drop"><i class="bi bi-arrow-down-short"></i></span>
+                    </div>
+                    <div class="accordion-content content-6">
+                        <ul>
+                            <li>Getting Started</li>
+                            <li>Add Contact</li>
+                            <li>Edit Contact</li>
+                            <li>View Contact</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <input type="checkbox" value="1" name="select" class="accordion-select accordion-select-once" />
+                    <div class="accordion-title">
+                        <span><i class="bi bi-pie-chart-fill"></i>&nbsp;&nbsp;Support Center</span>
+                        <span class="accordion-drop"><i class="bi bi-arrow-down-short"></i></span>
+                    </div>
+                    <div class="accordion-content content-2">
+                        <ul>
+                            <li>Overview</li>
+                            <li>Tickets<span class="accordion-contain-drop"><i class="bi bi-arrow-down-short"></i></span></li>
+                            <li>Tutorials<span class="accordion-contain-drop"><i class="bi bi-arrow-down-short"></i></span></li>
+                            <li>FAQ</li>
+                            <li>Licenses</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <input type="checkbox" value="1" name="select" class="accordion-select accordion-select-once" />
+                    <div class="accordion-title">
+                        <span><i class="bi bi-ui-checks-grid"></i>&nbsp;&nbsp;User Management</span>
+                        <span class="accordion-drop"><i class="bi bi-arrow-down-short"></i></span>
+                    </div>
+                    <div class="accordion-content content-8">
+                        <ul>
+                            <li>Users<span class="accordion-contain-drop"><i class="bi bi-arrow-down-short"></i></span>
+                            </li>
+                            <li>Roles<span class="accordion-contain-drop"><i class="bi bi-arrow-down-short"></i></span>
+                            </li>
+                            <li>Permission</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <input type="checkbox" value="1" name="select" class="accordion-select accordion-select-once" />
+                    <div class="accordion-title">
+                        <span><i class="bi bi-hurricane"></i>&nbsp;&nbsp;Customers</span>
+                        <span class="accordion-drop"><i class="bi bi-arrow-down-short"></i></span>
+                    </div>
+                    <div class="accordion-content content-8">
+                        <ul>
+                            <li>Getting Started</li>
+                            <li>Customer Listing</li>
+                            <li>Customer Details</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <input type="checkbox" value="1" name="select" class="accordion-select accordion-select-once" />
+                    <div class="accordion-title">
+                        <span><i class="bi bi-map"></i>&nbsp;&nbsp;Subscription</span>
+                        <span class="accordion-drop"><i class="bi bi-arrow-down-short"></i></span>
+                    </div>
+                    <div class="accordion-content content-6">
+                        <ul>
+                            <li>Getting Started</li>
+                            <li>Subscription List</li>
+                            <li>Add Subscription</li>
+                            <li>View Subscription</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <input type="checkbox" value="1" name="select" class="accordion-select accordion-select-once" />
+                    <div class="accordion-title">
+                        <span><i class="bi bi-view-list"></i>&nbsp;&nbsp;Invoice Manager</span>
+                        <span class="accordion-drop"><i class="bi bi-arrow-down-short"></i></span>
+                    </div>
+                    <div class="accordion-content content-7">
+                        <ul>
+                            <li>View Invoice</li>
+                            <li>Create Invoice</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <input type="checkbox" value="1" name="select" class="accordion-select accordion-select-once" />
+                    <div class="accordion-title">
+                        <span><i class="bi bi-toggles"></i>&nbsp;&nbsp;File Manager</span>
+                        <span class="accordion-drop"><i class="bi bi-arrow-down-short"></i></span>
+                    </div>
+                    <div class="accordion-content content-6">
+                        <ul>
+                            <li>Folders</li>
+                            <li>Files</li>
+                            <li>Blank Directory</li>
+                            <li>Settings</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <input type="checkbox" value="1" name="select" class="accordion-select accordion-select-once" />
+                    <div class="accordion-title">
+                        <span><i class="bi bi-envelope-fill"></i>&nbsp;&nbsp;Inbox</span>
+                        <span class="accordion-drop"><i class="bi bi-arrow-down-short"></i></span>
+                    </div>
+                    <div class="accordion-content content-8">
+                        <ul>
+                            <li>Message<span class="accordion-contain-drop"><i class="bi bi-3-square-fill" style="color: #50CD89;"></i></span></li>
+                            <li>Compose</li>
+                            <li>View & Reply</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <input type="checkbox" value="1" name="select" class="accordion-select accordion-select-once" />
+                    <div class="accordion-title">
+                        <span><i class="bi bi-chat-left-text-fill"></i>&nbsp;&nbsp;Chat</span>
+                        <span class="accordion-drop"><i class="bi bi-arrow-down-short"></i></span>
+                    </div>
+                    <div class="accordion-content content-8">
+                        <ul>
+                            <li>Private Chat</li>
+                            <li>Group Chat</li>
+                            <li>Drawer Chat</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <input type="checkbox" value="1" name="select" class="accordion-select accordion-select-once" />
+                    <div class="accordion-title">
+                        <span><i class="bi bi-calendar3"></i>&nbsp;&nbsp;Calender</span>
+                    </div>
+                </div>
+                <div class="side-heading">
+                    <div class="LAYOUTS"></div>
+                </div>
+                <div class="accordion">
+                    <input type="checkbox" value="1" name="select" class="accordion-select accordion-select-once" />
+                    <div class="accordion-title">
+                        <span><i class="bi bi-rulers"></i>&nbsp;&nbsp;Layout Options</span>
+                        <span class="accordion-drop"><i class="bi bi-arrow-down-short"></i></span>
+                    </div>
+                    <div class="accordion-content content-6">
+                        <ul>
+                            <li>Light Sidebar</li>
+                            <li>Dark Sidebar</li>
+                            <li>Light Header</li>
+                            <li>Dark Header</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <input type="checkbox" value="1" name="select" class="accordion-select accordion-select-once" />
+                    <div class="accordion-title">
+                        <span><i class="bi bi-hexagon-fill"></i>&nbsp;&nbsp;Layout Builder</span>
+                    </div>
+                </div>
+                <div class="side-heading">
+                    <div class="pages">HELP</div>
+                </div>
+                <div class="accordion">
+                    <input type="checkbox" value="1" name="select" class="accordion-select accordion-select-once" />
+                    <div class="accordion-title">
+                        <span><i class="bi bi-rocket"></i>&nbsp;&nbsp;Components</span>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <input type="checkbox" value="1" name="select" class="accordion-select accordion-select-once" />
+                    <div class="accordion-title">
+                        <span><i class="bi bi-stack"></i>&nbsp;&nbsp;Documentation</span>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <input type="checkbox" value="1" name="select" class="accordion-select accordion-select-once" />
+                    <div class="accordion-title">
+                        <span><i class="bi bi-code-slash"></i>&nbsp;&nbsp;Changelog v3.0.1</span>
+                    </div>
+                </div>
+            </div>
+            <div class="side-menu-bottom">
+                <a href="/" class="button"><span>Docs & Components</span></a>
+            </div>
+        </div>
+        <div class="left-box-close">
+            <div class="logo">
+                <span class="svg-icons"><i class="bi bi-caret-right-fill pointer"></i></span>
+                <!-- <span class="svg-icons"><i class="bi bi-caret-left-fill pointer"></i></span> -->
+            </div>
+            <div class="side-menu leftbox-close">
+                <div class="leftbox-close-icons"><i class="bi bi-grid-fill"></i></div>
+                <div class="leftbox-close-icons"><i class="bi"></i></div>
+                <div class="leftbox-close-icons"><i class="bi bi-person-lines-fill"></i></div>
+                <div class="leftbox-close-icons"><i class="bi bi-back"></i></div>
+                <div class="leftbox-close-icons"><i class="bi bi-shield-fill-exclamation"></i></div>
+                <div class="leftbox-close-icons"><i class="bi bi-file-person-fill"></i></div>
+                <div class="leftbox-close-icons"><i class="bi bi-slack"></i></div>
+                <div class="leftbox-close-icons"><i class="bi bi-bank2"></i></div>
+                <div class="leftbox-close-icons"><i class="bi bi-easel2-fill"></i></div>
+                <div class="leftbox-close-icons"><i class="bi bi-file-earmark-bar-graph-fill"></i></div>
+                <div class="leftbox-close-icons"><i class="bi"></i></div>
+                <div class="leftbox-close-icons"><i class="bi bi-palette2"></i></div>
+                <div class="leftbox-close-icons"><i class="bi bi-basket2"></i></div>
+                <div class="leftbox-close-icons"><i class="bi bi-nut-fill"></i></div>
+                <div class="leftbox-close-icons"><i class="bi bi-pie-chart-fill"></i></div>
+                <div class="leftbox-close-icons"><i class="bi bi-ui-checks-grid"></i></div>
+                <div class="leftbox-close-icons"><i class="bi bi-hurricane"></i></div>
+                <div class="leftbox-close-icons"><i class="bi bi-map"></i></div>
+                <div class="leftbox-close-icons"><i class="bi bi-view-list"></i></div>
+                <div class="leftbox-close-icons"><i class="bi bi-toggles"></i></div>
+                <div class="leftbox-close-icons"><i class="bi bi-envelope-fill"></i></div>
+                <div class="leftbox-close-icons"><i class="bi bi-chat-left-text-fill"></i></div>
+                <div class="leftbox-close-icons"><i class="bi bi-calendar3"></i></div>
+                <div class="leftbox-close-icons"><i class="bi bi-rulers"></i></div>
+                <div class="leftbox-close-icons"><i class="bi bi-hexagon-fill"></i></div>
+                <div class="leftbox-close-icons"><i class="bi bi-rocket"></i></div>
+                <div class="leftbox-close-icons"><i class="bi bi-stack"></i></div>
+            </div>
+            <div class="side-menu-bottom-close">
+                <a href="/" class="button"><i class="bi bi-file-earmark-text-fill"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- Nav Bar -->
+    <nav class="navbar">
+        <!-- nav left list -->
+        <div class="nav-left-list">
+            <span class="button pointer btn-active dashboards" id="dashboards"><span class="pointer">Dashboards</span>
+                <span class="dropdown-content" id="drop-dash">
+                    <div class="dropdown-box">
+                        <div class="dropdown-content-left">
+                            <a href="/">
+                                <div class="menuitem pointer menuitem-active">
+                                    <div class="menuitem-l pointer"><i class="bi bi-basket2 pointer"></i></div>
+                                    <div class="menuitem-r pointer">
+                                        <div class="menuitem-heading pointer">Default</div>
+                                        <div class="menuitem-details pointer">Reports & statistics</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="/">
+                                <div class="menuitem pointer">
+                                    <div class="menuitem-l pointer"><i class="bi bi-basket2 pointer"></i></div>
+                                    <div class="menuitem-r pointer">
+                                        <div class="menuitem-heading pointer">Default</div>
+                                        <div class="menuitem-details pointer">Reports & statistics</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="/">
+                                <div class="menuitem pointer">
+                                    <div class="menuitem-l pointer"><i class="bi bi-basket2 pointer"></i></div>
+                                    <div class="menuitem-r pointer">
+                                        <div class="menuitem-heading pointer">Default</div>
+                                        <div class="menuitem-details pointer">Reports & statistics</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="/">
+                                <div class="menuitem pointer">
+                                    <div class="menuitem-l pointer"><i class="bi bi-basket2 pointer"></i></div>
+                                    <div class="menuitem-r pointer">
+                                        <div class="menuitem-heading pointer">Default</div>
+                                        <div class="menuitem-details pointer">Reports & statistics</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="dropdown-content-right">
+                            <a href="/">
+                                <div class="menuitem pointer">
+                                    <div class="menuitem-l pointer"><i class="bi bi-basket2 pointer"></i></div>
+                                    <div class="menuitem-r pointer">
+                                        <div class="menuitem-heading pointer">Default</div>
+                                        <div class="menuitem-details pointer">Reports & statistics</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="/">
+                                <div class="menuitem pointer">
+                                    <div class="menuitem-l pointer"><i class="bi bi-basket2 pointer"></i></div>
+                                    <div class="menuitem-r pointer">
+                                        <div class="menuitem-heading pointer">Default</div>
+                                        <div class="menuitem-details pointer">Reports & statistics</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="/">
+                                <div class="menuitem pointer">
+                                    <div class="menuitem-l pointer"><i class="bi bi-basket2 pointer"></i></div>
+                                    <div class="menuitem-r pointer">
+                                        <div class="menuitem-heading pointer">Default</div>
+                                        <div class="menuitem-details pointer">Reports & statistics</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="/">
+                                <div class="menuitem pointer">
+                                    <div class="menuitem-l pointer"><i class="bi bi-basket2 pointer"></i></div>
+                                    <div class="menuitem-r pointer">
+                                        <div class="menuitem-heading pointer">Default</div>
+                                        <div class="menuitem-details pointer">Reports & statistics</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </span>
+            </span>
+            <span class="button pointer pages" id="pages"><span class="pointer">Pages</span>
+                <span class="dropdown-content" id="drop-page">
+                    <div class="dropdown-box dropdown-page">
+                        <div class="dropdown-heading1">
+                            <a class="pointer heading-active" href='#general'>General</a>
+                            <a class="pointer" href='#account'>Account</a>
+                            <a class="pointer" href='#authentication'>Authentication</a>
+                            <a class="pointer" href='#utilities'>Utilities</a>
+                        </div>
+                        <div class="account">
+                            <div class="account-box">
+                                <h3>User Profile</h3>
+                                <ol>
+                                    <li>Overview</li>
+                                    <li>Project</li>
+                                    <li>Campaigns</li>
+                                    <li>Documents</li>
+                                    <li>Followers</li>
+                                    <li>Activity</li>
+                                </ol>
+                            </div>
+                            <div class="account-box">
+                                <h3>Corporate</h3>
+                                <ol>
+                                    <li>About</li>
+                                    <li>Our Team</li>
+                                    <li>FAQ</li>
+                                    <li>Contact us</li>
+                                    <li>Pricing</li>
+                                    <li>Licenses</li>
+                                    <li>Sitemap</li>
+                                </ol>
+                            </div>
+                            <div class="account-box">
+                                <h3>Blog</h3>
+                                <ol>
+                                    <li>Blog Home</li>
+                                    <li>Blog Post</li>
+                                    <li>Careers</li>
+                                    <li>Careers List</li>
+                                    <li>Careers Apply</li>
+                                </ol>
+                            </div>
+                            <div class="account-box">
+                                <h3>Social</h3>
+                                <ol>
+                                    <li>Feeds</li>
+                                    <li>Activity</li>
+                                    <li>Followers</li>
+                                    <li>Settings</li>
+                                </ol>
+                            </div>
+                            <div class="account-img">
+                                <img src="/images/img-82.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </span>
+            </span>
+            <span class="button pointer" id="apps"><span class="pointer">Apps</span>
+                <span class="dropdown-content" id="drop-app">
+                    <div class="dropright dropdown-box">
+                        <div class="dropright-title pointer" id="projects"><i class="bi bi-rocket-fill pointer"></i>Projects <i class="bi bi-arrow-right-short pointer"></i></div>
+                        <div class="dropright-box" id="project">
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                        </div>
+                    </div>
+                    <div class="dropright dropdown-box">
+                        <div class="dropright-title pointer" id="projects"><i class="bi bi-cart4 pointer"></i>eCommerce
+                            <i class="bi bi-arrow-right-short pointer"></i>
+                        </div>
+                        <div class="dropright-box" id="project">
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                        </div>
+                    </div>
+                    <div class="dropright dropdown-box">
+                        <div class="dropright-title pointer" id="projects"><i class="bi bi-pie-chart-fill pointer"></i>Support Center <i class="bi bi-arrow-right-short pointer"></i></div>
+                        <div class="dropright-box" id="project">
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                        </div>
+                    </div>
+                    <div class="dropright dropdown-box">
+                        <div class="dropright-title pointer" id="projects"><i class="bi bi-file-lock2-fill pointer"></i>User Management
+                            <i class="bi bi-arrow-right-short pointer"></i>
+                        </div>
+                        <div class="dropright-box" id="project">
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                        </div>
+                    </div>
+                    <div class="dropright dropdown-box">
+                        <div class="dropright-title pointer" id="projects"><i class="bi bi-person-video2 pointer"></i>Contacts <i class="bi bi-arrow-right-short pointer"></i></div>
+                        <div class="dropright-box pointer" id="project">
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                        </div>
+                    </div>
+                    <div class="dropright dropdown-box">
+                        <div class="dropright-title pointer" id="projects"><i class="bi bi-basket pointer"></i>Subscription <i class="bi bi-arrow-right-short pointer"></i></div>
+                        <div class="dropright-box" id="project">
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                        </div>
+                    </div>
+                    <div class="dropright dropdown-box">
+                        <div class="dropright-title pointer" id="projects"><i class="bi bi-people-fill pointer"></i>Customers <i class="bi bi-arrow-right-short pointer"></i></div>
+                        <div class="dropright-box" id="project">
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                        </div>
+                    </div>
+                    <div class="dropright dropdown-box">
+                        <div class="dropright-title pointer" id="projects"><i class="bi bi-database pointer"></i>Invoice
+                            Management <i class="bi bi-arrow-right-short pointer"></i></div>
+                        <div class="dropright-box" id="project">
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                        </div>
+                    </div>
+                    <div class="dropright dropdown-box">
+                        <div class="dropright-title pointer" id="projects"><i class="bi bi-file-earmark-plus-fill pointer"></i>File Management <i class="bi bi-arrow-right-short pointer"></i></div>
+                        <div class="dropright-box" id="project">
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                        </div>
+                    </div>
+                    <div class="dropright dropdown-box">
+                        <div class="dropright-title pointer" id="projects"><i class="bi bi-envelope-fill pointer"></i>Inbox <i class="bi bi-arrow-right-short pointer"></i></div>
+                        <div class="dropright-box" id="project">
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                        </div>
+                    </div>
+                    <div class="dropright dropdown-box">
+                        <div class="dropright-title pointer" id="projects"><i class="bi bi-chat-left-text-fill pointer"></i>Chat <i class="bi bi-arrow-right-short pointer"></i></div>
+                        <div class="dropright-box" id="project">
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                            <div class="pointer"><span class="bullet"></span>Lorem</div>
+                        </div>
+                    </div>
+                    <div class="dropright dropdown-box">
+                        <div class="dropright-title pointer" id="projects"><i class="bi bi-calendar3 pointer"></i>Calander</div>
+                    </div>
+                </span>
+            </span>
+            <span class="button pointer layouts" id="dashboards"><span class="pointer">Layouts</span>
+                <span class="dropdown-content layout" id="drop-dash">
+                    <div class="dropdown-box">
+                        <div class="dropdown-box-l">
+                            <div class="pointer"><span class="bullet"></span>Light Sidebar</div>
+                            <div class="pointer"><span class="bullet"></span>Dark Sidebar</div>
+                            <div class="pointer"><span class="bullet"></span>Light Header</div>
+                            <div class="pointer"><span class="bullet"></span>Dark Header</div>
+                        </div>
+                        <div class="dropdown-box-r">
+                            <img src="/images/74.jpg">
+                        </div>
+                    </div>
+                    <div class="dropdown-box-hr"></div>
+                    <div class="dropdown-box-b">
+                        <div class="dropdown-box-b-text">
+                            <div class="text-h3">Layout Builder</div>
+                            <div class="text-h4">Customize, preview and export</div>
+                        </div>
+                        <div class="dropdown-box-b-button pointer">
+                            <a href="/" class="button pointer">Try Builder</a>
+                        </div>
+                    </div>
+                </span>
+            </span>
+            <span class="button pointer" id="helps"><span class="pointer">Help</span>
+                <span class="dropdown-content" id="help">
+                    <div class="dropdown-content-l">
+                        <div class="pointer"><i class="bi bi-rocket-fill"></i>Components</div>
+                        <div class="pointer"><i class="bi bi-stack"></i>Documentation</div>
+                        <div class="pointer"><i class="bi bi-code-slash"></i>Changelog v3.0.2</div>
+                    </div>
+                </span>
+            </span>
+        </div>
+        <!-- nav right list -->
+        <div class="nav-right-list">
+            <span class="button"><i class="bi bi-search pointer"></i></span>
+            <span class="button"><i class="bi bi-bar-chart-line-fill pointer"></i></span>
+            <span class="button pointer" id="notifications"><span class="pointer"><i class="bi bi-bell-fill"></i></span>
+                <span class="notification-content" id="notification">
+                    <div class="notification-content-t">
+                        <h3>Notification &nbsp;&nbsp;<span>24 reports</span></h3>
+                        <div class="dropdown-content-accordion">
+                            <a href="#">Alert</a>
+                            <a href="#" class="dropdown-content-accordion-active">Updates</a>
+                            <a href="#">Logs</a>
+                        </div>
+                        <div class="dropdown-content-b">
+                            <div class="content-t">
+                                <h3>Get Access Pro</h3>
+                                <div>Outlines keep you honest. They stoping you from amazing poorly about drive</div>
+                                <div class="notification-button"><span class="button">Upgrade</span></div>
+                            </div>
+                            <div class="content-b">
+                                <img src="images/1.png">
+                            </div>
+                        </div>
+                    </div>
+                </span>
+            </span>
+            <span class="button"><i class="bi bi-chat-square-text-fill pointer"><span class="mes-dot"></span></i></span>
+            <span class="button flag-icon pointer" id="langu"><span class="pointer"><img src="/images/flag/us.svg" class="flag pointer"></span>
+                <span class="dropdown-content" id="lang">
+                    <div class="dropdown-content-l">
+                        <div class="pointer dropdown-content-l-active"><span><img src="/images/flag/us.svg" class="flag pointer"></span>English</div>
+                        <div class="pointer"><a href="/"><span><img src="/images/flag/spain.svg" class="flag pointer"></span>Spanish</a></div>
+                        <div class="pointer"><a href="/"><span><img src="/images/flag/germany.svg" class="flag pointer"></span>German</a></div>
+                        <div class="pointer"><a href="/"><span><img src="/images/flag/japan.svg" class="flag pointer"></span>Japanese</a></div>
+                        <div class="pointer"><a href="/"><span><img src="/images/flag/france.svg" class="flag pointer"></span>French</a></div>
+                    </div>
+                </span>
+            </span>
+            <span class="button pointer" id="bright"><span class="pointer"><i class="bi bi-brightness-high-fill pointer"></i></span>
+                <span class="dropdown-content" id="brigh">
+                    <div class="dropdown-content-l">
+                        <div class="pointer"><i class="bi bi-brightness-high"></i>Light</div>
+                        <div class="pointer"><i class="bi bi-brightness-high-fill"></i>Dark</div>
+                        <div class="pointer"><i class="bi bi-motherboard-fill"></i>System</div>
+                    </div>
+                </span>
+            </span>
+            <span class="button pointer" id="profiles"><span class="button"><img src="/images/profile.jpg" class="profile pointer"></span>
+                <span class="dropdown-content" id="profile">
+                    <div class="dropdown-content-l profile-block">
+                        <div class="profile-details">
+                            <span><img src="/images/profile.jpg" class="profile"></span>
+                            <span class="profile-details-1">
+                                <span>Max Smith <span>Pro</span></span>
+                                <span>max@kt.com</span>
+                            </span>
+                        </div>
+                        <div class="border"></div>
+                        <div class="pointer"> My Profile</div>
+                        <div class="pointer profile-details-project">My Projects &nbsp;<span>3</span></div>
+                        <div class="pointer profile-details-sub" id="subscription-hover-left">My Subscription <i class="bi bi-arrow-right-short"></i>
+                            <span class="profile-details-sub-hov " id="subscription-show-left">
+                                <div class="pointer show-left-1"></div>
+                                <div class="pointer">Referrals</div>
+                                <div class="pointer">Billing</div>
+                                <div class="pointer">Payments</div>
+                                <div class="pointer show-left-5">Statements<i class="bi bi-exclamation-circle-fill"></i></div>
+                                <div class="border"></div>
+                                <div><span class="radio-btn pointer"><input type="checkbox" id="name" name="name"><label class="ios-checkbox" for="name"></label></span>&nbsp;&nbsp; Notifications</div>
+                            </span>
+                        </div>
+                        <div class="pointer">My Statements</div>
+                        <div class="border"></div>
+                        <div class="pointer profile-details-lang" id="language-hover-left">Language <span class="lang-display">English &nbsp;<img src="/images/flag/spain.svg" class="flag pointer"></span>
+                            <span class="profile-details-sub-hov lang-display-left" id="language-show-left">
+                                <div class="pointer show-left-1"></div>
+                                <div class="pointer dropdown-content-l-active"><span><img src="/images/flag/us.svg" class="flag pointer"></span>English</div>
+                                <div class="pointer"><a href="/"><span><img src="/images/flag/spain.svg" class="flag pointer"></span>Spanish</a></div>
+                                <div class="pointer"><a href="/"><span><img src="/images/flag/germany.svg" class="flag pointer"></span>German</a></div>
+                                <div class="pointer"><a href="/"><span><img src="/images/flag/japan.svg" class="flag pointer"></span>Japanese</a></div>
+                                <div class="pointer"><a href="/"><span><img src="/images/flag/france.svg" class="flag pointer"></span>French</a></div>
+                            </span>
+                        </div>
+                        <div class="pointer">Account Settings</div>
+                        <div class="pointer">Sign Out</div>
+                    </div>
+                </span>
+            </span>
+        </div>
+    </nav>
+    <!-- Costomize Button Right Corner -->
+    <div class="pointer costomize"><i class="bi bi-sliders2"></i>&nbsp;&nbsp;Costomize</div>
+    <div class="main-body">
+        <div class="page-heading">
+            <div class="page-heading-text">
+                <span class="heading-l">
+                    <span class="heading-l-title">Default</span>
+                    <span class="heading-l-dashboard"><span class="pointer color-blue">Home</span> &nbsp;- &nbsp;Dashboards</span>
+                </span>
+                <span class="heading-r">
+                    <div class="select-box">
+                        <label for="select-ul"><button type="button">Select Campaign</button></label>
+                        <ul role="listbox">
+                          <li role="option">Twitter Campaign</li>
+                          <li role="option">Facebook Campaign</li>
+                          <li role="option">Adword Campaign</li>
+                          <li role="option">Carbon Campaign</li>
+                        </ul>                      
+                      </div>
+                    <div><i class="bi bi-plus-square-fill"></i></div>
+                </span>
+            </div>
+        </div>
+        <div class="dashboard-1">
+            <div class="dashboard-1-l">
+                <div class="active-project dashboard-card">
+                    <div class="card-header">
+                        <span>69</span>
+                        <span>Active Projects in April</span>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-footer-text">
+                            <span>43 Pending</span>
+                            <span>72%</span>
+                        </span>
+                        <span class="card-footer-radio">
+                            <span></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="dashboard-card external-links">
+                    <span class="card-footer-text external-links-text">
+                        <span>External Links</span>
+                        <span><i class="bi bi-three-dots pointer"></i></span>
+                    </span>
+                    <div class="card-footer">
+                        <div class="link"><a href="#"><span class="pointer">Avg. Client Rating </span><span><i class="bi bi-box-arrow-up-right pointer color-blue"></i></span></a></div>
+                        <div class="border-2"></div>
+                        <div class="link"><a href="#"><span class="pointer">Instagram Followers </span><span><i class="bi bi-box-arrow-up-right pointer color-blue"></i></span></a></div>
+                        <div class="border-2"></div>
+                        <div class="link"><a href="#"><span class="pointer">Google Ads CPC </span><span><i class="bi bi-box-arrow-up-right pointer color-blue"></i></span></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard-1-r">
+                <div class="dashboard-card dashboard-earning">
+                    <div class="card-header">
+                        <span><span class="dollar">$</span>69,700 <span class="grow"><i class="bi bi-arrow-up-short"></i>2.2%</span></span>
+                        <span>Projects Earnings in April</span>
+                    </div>
+                    <div class="card-footer">
+                        <span class="donot-chat"><img src="/images/chart.svg"></span>
+                        <span class="chat-desctiption">
+                            <div><div class="chat-display-color" style="background-color: #3E97FF;"></div>Leaf CRM <span>$7,660</span></div>
+                            <div><div class="chat-display-color" style="background-color: #50CD89;"></div>Mivy App <span>$2,820</span></div>
+                            <div><div class="chat-display-color" style="background-color: #E4E6EF;"></div>Other <span>$45,257</span></div>
+                        </span>
+                    </div>
+                </div>
+                <div class="dashboard-card">
+                    <div class="card-footer-text external-links-text">
+                        <span>Highlights</span>
+                    </div>
+                    <div class="card-footer highlights">
+                        <div class="link"><a href="#">Avg. Client Rating <span><i class="bi bi-arrow-up-right"></i><b>7.8</b>/10</span></a></div>
+                        <div class="border-2"></div>
+                        <div class="link"><a href="#">Avg. Client Rating <span><i class="bi bi-arrow-down-left" style="color: #f1416c;"></i><b>730</b></span></a></div>
+                        <div class="border-2"></div>
+                        <div class="link"><a href="#">Avg. Client Rating <span><i class="bi bi-arrow-up-right"></i><b>$2,309</b></span></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard-2">
+            <div class="dashboard-2-heading">
+                <div class="heading-left">
+                    <div class="heading-l-title">Authors Achievements</div>
+                    <div class="heading-l-dashboard">Avg. 69.34% Conv. Rate</div>
+                </div>
+                <div class="heading-right">
+                    <span><i class="bi bi-three-dots pointer"></i></span>
+                </div>
+            </div>
+            <div class="dashboard-2-pills">
+                <i class="bi bi-filetype-sass"></i>
+                <i class="bi bi-bank"></i>
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+        
+    </script>
+</body>
+
+</html>
