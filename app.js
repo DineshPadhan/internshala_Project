@@ -50,3 +50,38 @@ $(document).ready(function () {
         $('.select-box label button').text(v)
     })
 });
+
+// Date display
+$(document).ready(function () {    
+var myCurrentDate = new Date();
+var dateMonths = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "June",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+  var dateFormat = myCurrentDate.getDate() + " " + dateMonths[myCurrentDate.getMonth()] + " " + myCurrentDate.getFullYear();
+    $("#date").html(dateFormat+"&nbsp; &nbsp;"+'<i class="bi bi-calendar-date-fill"></i>');
+});
+    
+$(document).ready(function () {
+    window.onscroll = function(){
+        if(document.body.scrollTop>20||document.documentElement.scrollTop>20){
+            $("#top").css('display', 'block');
+        } else{
+            $("#top").css('display', 'none');
+        }
+    }
+    $("#top").click(function () { 
+        document.body.scrollTop=0;
+        document.documentElement.scrollTop=0;
+    });
+});
